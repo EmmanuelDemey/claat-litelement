@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/**
+** HEADER PART
+**/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  background: white;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  padding: 0px 10px;
+  position: sticky;
+  top: 0px;
+}
+
+.header img {
+  height: 30px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__right--search {
+  margin-right: 10px;
+  height: 40px;
+  font-size: 17px;
+  background-color: #eff8fe;
+  border: none;
+  color: #5f6368;
+  padding: 2px 20px;
+}
+
+.header__right--user {
+  height: 35px;
+  border-radius: 50%;
+}
+
+/**
+** MAIN PART
+**/
+
+.main {
+  padding: 100px;
+}
+
+/**
+** SECTION PART
+**/
+
+/**
+** LAB PART
+**/
+
+.labs {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 100px;
+}
+
+.lab {
+  padding: 16px;
+  border: solid 1px #d9dce0;
+  border-radius: 5px;
+}
+
+.lab__title {
+  color: #1c73e7;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.lab__abstract {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.lab__date {
+  color: #5f6368;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.lab__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lab__footer button {
+  color: #1c73e7;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #d9dce0;
+}
+
+/**
+** FOOTER PART
+**/
+
+footer {
+  border-top: 1px solid #dadce0;
+  border-bottom: 1px solid #dadce0;
+  padding: 1px 10px;
+  background: white;
+  position: sticky;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.footer__nav ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.footer__nav a {
+  margin-right: 10px;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.footer__nav a:hover {
+  font-weight: bold;
+  color: #1c73e7;
+}
